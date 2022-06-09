@@ -31,6 +31,24 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000100"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000338 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000338"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001909 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001909"/>
+    
+
+
     <!-- http://w3id.org/rdfbones/ext/phaleron-se/KlalesFinalScore -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phaleron-se/KlalesFinalScore">
@@ -63,6 +81,14 @@
     <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phaleron-se/PhaleronSexEstimation">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000338"/>
         <rdfs:label>Overall morphological sex estimation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phaleron-se/PhaleronSexEstimationDataSet -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phaleron-se/PhaleronSexEstimationDataSet">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
     </owl:Class>
     
 
