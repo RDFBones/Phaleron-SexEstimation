@@ -93,6 +93,12 @@
     
 
 
+    <!-- http://w3id.org/rdfbones/ext/phaleron-se/PhaleronSexEstimationInvestigation -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phaleron-se/PhaleronSexEstimationInvestigation"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -101,6 +107,14 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phaleron-se/Ambiguous -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phaleron-se/Ambiguous">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phaleron-se/OverallSexEstimationResult"/>
+    </owl:NamedIndividual>
     
 
 
@@ -153,7 +167,7 @@
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phaleron-se/PhaleronPossiblyFemale">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phaleron-se/OverallSexEstimationResult"/>
-        <rdfs:label>Female</rdfs:label>
+        <rdfs:label>Possibly Female</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -162,7 +176,7 @@
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phaleron-se/PhaleronPossiblyMale">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phaleron-se/OverallSexEstimationResult"/>
-        <rdfs:label>Male</rdfs:label>
+        <rdfs:label>Possibly Male</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
