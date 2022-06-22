@@ -23,6 +23,25 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -46,6 +65,12 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0001909 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001909"/>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#LabelSortingSpecification -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#LabelSortingSpecification"/>
     
 
 
@@ -99,6 +124,14 @@
     
 
 
+    <!-- http://w3id.org/rdfbones/ext/phaleron-se/PhaleronSexEstimationLabelSorting -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phaleron-se/PhaleronSexEstimationLabelSorting">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#LabelSortingSpecification"/>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -107,14 +140,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://w3id.org/rdfbones/ext/phaleron-se/Ambiguous -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phaleron-se/Ambiguous">
-        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phaleron-se/OverallSexEstimationResult"/>
-    </owl:NamedIndividual>
     
 
 
@@ -132,6 +157,15 @@
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phaleron-se/KlalesMale">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phaleron-se/KlalesFinalScore"/>
         <rdfs:label>Male</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phaleron-se/PhaleronAmbiguous -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phaleron-se/PhaleronAmbiguous">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phaleron-se/OverallSexEstimationResult"/>
+        <rdfs:label>Ambiguous</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -177,6 +211,60 @@
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phaleron-se/PhaleronPossiblyMale">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phaleron-se/OverallSexEstimationResult"/>
         <rdfs:label>Possibly Male</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phaleron-se/PhaleronSexEstimationLabelSorting01 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phaleron-se/PhaleronSexEstimationLabelSorting01">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phaleron-se/PhaleronSexEstimationLabelSorting"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/ext/phaleron-se/PhaleronMale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phaleron-se/PhaleronSexEstimationLabelSorting02 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phaleron-se/PhaleronSexEstimationLabelSorting02">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phaleron-se/PhaleronSexEstimationLabelSorting"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/ext/phaleron-se/PhaleronPossiblyMale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phaleron-se/PhaleronSexEstimationLabelSorting03 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phaleron-se/PhaleronSexEstimationLabelSorting03">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phaleron-se/PhaleronSexEstimationLabelSorting"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/ext/phaleron-se/PhaleronAmbiguous"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phaleron-se/PhaleronSexEstimationLabelSorting04 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phaleron-se/PhaleronSexEstimationLabelSorting04">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phaleron-se/PhaleronSexEstimationLabelSorting"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/ext/phaleron-se/PhaleronPossiblyFemale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phaleron-se/PhaleronSexEstimationLabelSorting05 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phaleron-se/PhaleronSexEstimationLabelSorting05">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phaleron-se/PhaleronSexEstimationLabelSorting"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/ext/phaleron-se/PhaleronFemale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phaleron-se/PhaleronSexEstimationLabelSorting06 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phaleron-se/PhaleronSexEstimationLabelSorting06">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phaleron-se/PhaleronSexEstimationLabelSorting"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/ext/phaleron-se/PhaleronIndeterminate"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
